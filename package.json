@@ -4,7 +4,11 @@
   "description": "A bouncy proxy that uses seaport registry",
   "main": "proxy.js",
   "scripts": {
-    "test": "tap ./**/*_test.js"
+    "test": "tap ./**/*_test.js",
+    "start": "node server.js"
+  },
+  "bin": {
+    "jumpzone": "./bin/jumpzone"
   },
   "author": "Tom",
   "license": "MIT",
@@ -12,5 +16,14 @@
     "bouncy": "^3.2.1",
     "seaport": "^2.0.5",
     "minimist": "^0.1.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/twilson63/jumpzone.git"
+  },
+  "bugs": {
+    "url": "https://github.com/twilson63/jumpzone/issues"
+  },
+  "homepage": "https://github.com/twilson63/jumpzone"
 }
