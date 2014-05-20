@@ -1,4 +1,6 @@
-!# /usr/bin/env node
+#! /usr/bin/env node
 
-var argv = require('minimist')(process.argv.slice(2));
-require('../')(argv);
+var minimist = require('minimist');
+var argv = minimist(process.argv.slice(2));
+var jz = require('../')
+jz(argv);
