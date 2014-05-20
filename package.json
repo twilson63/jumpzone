@@ -1,6 +1,6 @@
 {
   "name": "jumpzone",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A bouncy proxy that uses seaport registry",
   "main": "proxy.js",
   "scripts": {
