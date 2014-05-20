@@ -35,7 +35,7 @@ module.exports = function (argv) {
     var app = req.headers.host.replace(domain, '');
 
     var ps = ports.query(app);
-
+    var appProcess = ps[Math.floor(Math.random() * ps.length)];
     if (argv.debug) console.log('%s Bouncing to %s',
       (new Date).toString(), JSON.stringify(appProcess));
 
@@ -43,7 +43,7 @@ module.exports = function (argv) {
       res.writeHead(503, {'Content-Type': 'text/plain'});
       res.end('service not available');
     } else {
-      var appProcess = ps[Math.floor(Math.random() * ps.length)];
+
       bounce(appProcess);
     }
   }).listen(argv.port || 8000);
