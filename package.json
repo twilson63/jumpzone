@@ -1,0 +1,16 @@
+{
+  "name": "jumpzone",
+  "version": "0.0.1",
+  "description": "A bouncy proxy that uses seaport registry",
+  "main": "proxy.js",
+  "scripts": {
+    "test": "tap ./**/*_test.js"
+  },
+  "author": "Tom",
+  "license": "MIT",
+  "dependencies": {
+    "bouncy": "^3.2.1",
+    "seaport": "^2.0.5",
+    "minimist": "^0.1.0"
+  }
+}
